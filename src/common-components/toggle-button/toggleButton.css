@@ -1,0 +1,41 @@
+.toggleButtonContainer {
+  display: flex;
+  align-items: center;
+  column-gap: 0.7rem;
+}
+.toggleButtonInput {
+  position: relative;
+  width: 60px;
+  height: 30px;
+  background: white;
+  outline: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  border: 1px solid #cccccc;
+  appearance: none;
+  transition: 0.5s;
+}
+
+.toggleButtonInput::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #f4f4f4;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 3px;
+  transition: 0.5s;
+  border: 1px solid #cccccc;
+}
+
+.toggleButtonInput:checked::before {
+  transform: translate(-100%, -50%);
+  background: #fff;
+  left: calc(100% - 3px);
+}
+
+.toggleButtonInput:checked {
+  background: #7a5cfa;
+}

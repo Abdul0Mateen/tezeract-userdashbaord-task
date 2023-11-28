@@ -1,0 +1,82 @@
+.dropDownContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.3rem;
+}
+.dropDownToggle {
+  width: calc(100% - 1.6rem);
+  padding: 0.8rem;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  color: #666666;
+  border: 2px solid #cccccc;
+  cursor: pointer;
+  background-color: white;
+}
+.dropDownToggleWrapper {
+  position: relative;
+}
+.dropDownIcon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 14px;
+  width: 12px;
+  pointer-events: null;
+  transition: all 0.4s ease-in-out;
+}
+.dropDownList {
+  z-index: 1;
+  background-color: white;
+  border: 2px solid #cccccc;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 66px;
+  left: 0;
+  width: 100%;
+  animation: dropMenuAnim 0.7s forwards;
+}
+.dropMenuLabel {
+  font-size: 0.75rem;
+}
+
+@keyframes dropMenuAnim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.dropDownList li {
+  padding: 1rem;
+  border-top: 2px solid #cccccc;
+}
+.dropDownList li:first-child {
+  border: none;
+}
+.dropDownList li:hover {
+  background-color: #7a5cfa;
+  color: white;
+  cursor: pointer;
+}
+.activeDropDown {
+  border: 2px solid #7a5cfa;
+}
+.activeDropIcon {
+  transform: rotate(-180deg) translateY(50%);
+}
+.error-class {
+  border: 2px solid #eb5757 !important;
+}
+.inputErrorMessage p {
+  color: #eb5757;
+  font-size: 0.75rem;
+  margin: 0;
+}

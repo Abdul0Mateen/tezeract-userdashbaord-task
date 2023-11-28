@@ -1,0 +1,164 @@
+.userDataTableContainer {
+  background-color: white;
+  height: 100%;
+  padding: 1rem;
+  border-radius: 3px;
+  min-height: calc(100vh - 6rem);
+}
+.userDataTableHeading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.userDataTableHeading h1 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-top: 2rem;
+}
+
+.userDataTableWrapper {
+  width: 100%;
+  background-color: white;
+}
+.userTableInnerWraapper {
+  overflow-x: auto;
+  position: relative;
+  padding-bottom: 3rem;
+}
+.userDataTable {
+  min-width: 900px;
+  width: 100%;
+  border-collapse: collapse;
+}
+.userDataTableHead tr th {
+  text-align: start;
+  font-size: 0.75rem;
+  padding: 1rem;
+}
+
+.userDataTableBody tr td {
+  font-size: 0.75rem;
+  padding: 1rem;
+}
+.userDataTableBody tr:nth-child(odd) {
+  background-color: #f7f7f7;
+}
+.showingEntriesWrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+.showingEntriesWrapper p {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.showingEntriesWrapper input {
+  border: 1px solid #d9d9d9;
+  border-radius: 1px;
+  background-color: white;
+  outline: none;
+  color: #798899;
+  width: 30px;
+  padding: 0.3rem;
+}
+
+.showingEntriesWrapper input::-webkit-outer-spin-button,
+.showingEntriesWrapper input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.showingEntriesWrapper input[type="number"] {
+  -moz-appearance: textfield;
+}
+.table-pagination-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+.paginationDesc {
+  font-size: 0.8rem;
+}
+.pagination {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+.page-link {
+  font-size: 0.8rem;
+  text-decoration: none;
+  background-color: #f7f7f7;
+  color: #798899;
+  height: 1.8rem;
+  width: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1px;
+  font-weight: 500;
+}
+.activePageLink {
+  background-color: #7a5cfa;
+  color: white;
+}
+.pagination-action-btn {
+  border: none;
+  background-color: #f7f7f7;
+  height: 1.8rem;
+  font-weight: 500;
+  color: #798899;
+  border-radius: 1px;
+  cursor: pointer;
+}
+.userNameData {
+  display: flex;
+  align-items: center;
+  column-gap: 0.7rem;
+}
+.userNameData img {
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.noDataMessage {
+  width: 100%;
+  text-align: center;
+}
+@media screen and (max-width: 576px) {
+  .table-pagination-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    position: sticky;
+    bottom: 0px;
+    left: 0;
+  }
+  .pagination {
+    column-gap: 0.4rem;
+  }
+  .page-link {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+  .pagination-action-btn {
+    height: 1.5rem;
+  }
+  .userTableInnerWraapper {
+    padding-bottom: 0rem;
+  }
+  .userDataTableHead tr th {
+    padding: 0.5rem;
+  }
+
+  .userDataTableBody tr td {
+    padding: 0.5rem;
+  }
+  .userDataTableHeading {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
