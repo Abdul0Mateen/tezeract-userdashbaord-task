@@ -19,13 +19,13 @@ Before you begin, ensure you have met the following requirements:
 1. Clone the repository to your local machine:
 
     ```bash
-    git clone https://github.com/your-username/your-repository.git
+    git clone https://github.com/Abdul0Mateen/tezeract-userdashbaord-task.git
     ```
 
 2. Navigate to the project directory:
 
     ```bash
-    cd your-repository
+    cd tezeract-userdashbaord-task
     ```
 
 3. Install the project dependencies:
@@ -43,8 +43,8 @@ Before you begin, ensure you have met the following requirements:
     Open the `.env` file and add your Cloudinary `CLOUD_NAME` and `UPLOAD_PRESET`:
 
     ```env
-    CLOUD_NAME=your-cloud-name
-    UPLOAD_PRESET=your-upload-preset
+    VITE_CLOUDINARY_CLOUD_NAME=your-cloud-name
+    VITE_CLOUDINARY_UPLOAD_PRESET=your-upload-preset
     ```
 
 ### Running the Application
